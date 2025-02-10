@@ -26,7 +26,7 @@ const Hero = () => {
           La <span className="text-[#54C6D0]">NRGym</span> îți oferim antrenamente diverse, pentru toate nivelele. Fii mai puternic și sănătos alături de noi!
         </p>
         <a href="#about" className="costum-cta items-center flex justify-center text-xs sm:text-sm md:text-base lg:text-lg">
-          Afla mai multe
+        Află mai multe
         </a>
       </div>
 
@@ -69,8 +69,8 @@ const Hero = () => {
       <p className="text-sm sm:text-base md:text-lg mt-4 px-6 sm:px-12 mb-5">
         La <span className="text-[#54c6d0]">NRGym</span> îți oferim antrenamente diverse, pentru toate nivelele. Fii mai puternic și sănătos alături de noi!
       </p>
-      <a href="#about" className=" bg-[#54c6d0] text-white py-2 px-4 rounded-3xl text-sm sm:text-base hover:bg-[#fe6d2f] transition duration-300">
-        Afla mai multe
+      <a href="#about" className=" bg-[#54c6d0] text-white py-2 px-4 rounded-3xl text-sm sm:text-base hover:bg-[#3f959d] transition duration-300">
+      Află mai multe
       </a>
     </div>
 
