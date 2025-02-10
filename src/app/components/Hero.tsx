@@ -2,8 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import background from "../assets/items/bg1.png";
-import nigga from "../assets/items/pngegg.png";
-import { FaArrowDown } from 'react-icons/fa';
+import bodybuilder from "../assets/items/pngegg.png";
 
 const Hero = () => {
   return (
@@ -33,7 +32,7 @@ const Hero = () => {
 
       {/* Bodybuilder Image */}
       <div className="h-full w-1/3 translate-y-[20%] translate-x-[-15%] bodybuilder-image">
-        <Image src={nigga} alt="bodybuilder" className="scale-[1.3]" /> 
+        <Image src={bodybuilder} alt="bodybuilder" className="scale-[1.3]" /> 
       </div>
 
       {/* Right Section - "No Gain" & Scroll Button */}
@@ -77,7 +76,7 @@ const Hero = () => {
 
     {/* Bodybuilder Image */}
     <div className="mt-4">
-      <Image src={nigga} alt="bodybuilder" className="scale-[1.0]" />
+      <Image src={bodybuilder} alt="bodybuilder" className="scale-[1.0]" />
     </div>
 
     {/* Scroll Button */}
