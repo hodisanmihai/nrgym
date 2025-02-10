@@ -23,7 +23,7 @@ const Hero = () => {
           NO PAIN
         </h1>
         <p className="p-2 ml-6 text-xs sm:text-sm md:text-base lg:text-lg">
-          La <span className="text-[#fe6d2f]">NRGym</span> îți oferim antrenamente diverse, pentru toate nivelele. Fii mai puternic și sănătos alături de noi!
+          La <span className="text-[#54C6D0]">NRGym</span> îți oferim antrenamente diverse, pentru toate nivelele. Fii mai puternic și sănătos alături de noi!
         </p>
         <a href="#about" className="costum-cta items-center flex justify-center text-xs sm:text-sm md:text-base lg:text-lg">
           Afla mai multe
@@ -67,9 +67,9 @@ const Hero = () => {
         NO PAIN - NO GAIN
       </h1>
       <p className="text-sm sm:text-base md:text-lg mt-4 px-6 sm:px-12 mb-5">
-        La <span className="text-[#fe6d2f]">NRGym</span> îți oferim antrenamente diverse, pentru toate nivelele. Fii mai puternic și sănătos alături de noi!
+        La <span className="text-[#54c6d0]">NRGym</span> îți oferim antrenamente diverse, pentru toate nivelele. Fii mai puternic și sănătos alături de noi!
       </p>
-      <a href="#about" className=" bg-[#fe6d2f] text-white py-2 px-4 rounded-3xl text-sm sm:text-base hover:bg-[#fe6d2f] transition duration-300">
+      <a href="#about" className=" bg-[#54c6d0] text-white py-2 px-4 rounded-3xl text-sm sm:text-base hover:bg-[#fe6d2f] transition duration-300">
         Afla mai multe
       </a>
     </div>

@@ -23,7 +23,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-6 text-black">
           <a href="#home">Home</a>
           <a href="#about">About</a>
-          <a href="#pricing">Preturi</a>
+          <a href="#pricing">Abonamente</a>
           <a href="#program">Program</a>
         </div>
 
@@ -59,7 +59,7 @@ const Navbar = () => {
           >
             <a href="#home" onClick={closeNav}>Home</a>
             <a href="#about" onClick={closeNav}>About</a>
-            <a href="#pricing" onClick={closeNav}>Preturi</a>
+            <a href="#pricing" onClick={closeNav}>Abonamente</a>
             <a href="#program" onClick={closeNav}>Program</a>
             <a href="#contact" onClick={closeNav} className="bg-white text-black px-6 py-2 rounded-2xl">
               Contacteaza-ne

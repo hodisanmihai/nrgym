@@ -63,7 +63,7 @@ const Program = () => {
 
             {/* Social */}
             <div id='contact' className="w-full sm:w-1/3 h-auto bg-gray-100 shadow-xl rounded-lg p-6 flex flex-col items-center">
-  <h1 className="font-extrabold text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[3rem] text-[#fe6d2f] text-center mb-6">
+  <h1 className="font-extrabold text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[3rem] text-[#54c6d0] text-center mb-6">
   Contactează-ne
   </h1>
 

@@ -38,7 +38,7 @@ nrgym23@yahoo.com</a></p>
 
         {/* Copyright */}
         <aside className="mt-6 text-center text-sm">
-          <p>Copyright © {new Date().getFullYear()} - Toate drepturile rezervate ACME Industries Ltd</p>
+          <p>Copyright © {new Date().getFullYear()} - Toate drepturile rezervate <span className='text-[#54c6d0] text-nowrap'>NRGym Oradea</span></p>
         </aside>
 
         {/* Created by Section */}

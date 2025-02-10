@@ -14,9 +14,9 @@ const About = () => {
         {/* Title Section */}
         <div className="text-center space-y-2">
           <h3 className="text-sm sm:text-base tracking-[1rem] text-black">
-            Sala creata
+          Sală creată
           </h3> 
-          <h1 className="font-extrabold text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[3rem] text-[#fe6d2f]">
+          <h1 className="font-extrabold text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[3rem] text-[#54c6d0]">
             PENTRU TINE
           </h1>
         </div>
@@ -27,22 +27,22 @@ const About = () => {
             {/* Cards 1 */}
             <div className="photo-card group flex justify-center items-center flex-col pt-2">
               <Image src={photo1} alt="photo" className='w-[200px] h-[270px] rounded-2xl object-cover p-2 md:p-0'/>
-              <h5 className='pt-4 text-center font-semibold group-hover:text-[#fe6d2f]'>Antrenamente eficiente</h5>
+              <h5 className='pt-4 text-center font-semibold group-hover:text-[#54c6d0]'>Antrenamente eficiente</h5>
             </div>
             {/* Cards 2 */}
             <div className="photo-card group flex justify-center items-center flex-col pt-2">
               <Image src={photo2} alt="photo" className='w-[200px] h-[270px] rounded-2xl object-cover p-2 md:p-0'/>
-              <h5 className='pt-4 text-center font-semibold group-hover:text-[#fe6d2f]'>Antrenori dedicați</h5>
+              <h5 className='pt-4 text-center font-semibold group-hover:text-[#54c6d0]'>Antrenori dedicați</h5>
             </div>
             {/* Cards 3 */}
             <div className="photo-card group flex justify-center items-center flex-col pt-2">
               <Image src={photo3} alt="photo" className='w-[200px] h-[270px] rounded-2xl object-cover p-2 md:p-0'/>
-              <h5 className='pt-4 text-center font-semibold group-hover:text-[#fe6d2f]'>Putere și performanță</h5>
+              <h5 className='pt-4 text-center font-semibold group-hover:text-[#54c6d0]'>Putere și performanță</h5>
             </div>
             {/* Cards 4 */}
             <div className="photo-card group flex justify-center items-center flex-col pt-2">
               <Image src={photo4} alt="photo" className='w-[200px] h-[270px] rounded-2xl object-cover p-2 md:p-0'/>
-              <h5 className='pt-4 text-center font-semibold group-hover:text-[#fe6d2f]'>Relaxare totală</h5>
+              <h5 className='pt-4 text-center font-semibold group-hover:text-[#54c6d0]'>Relaxare totală</h5>
             </div>
           </div>
         </div>
@@ -63,7 +63,7 @@ const About = () => {
                 <h3 className="text-sm sm:text-base tracking-[1rem] text-black">
                   Cine
                 </h3> 
-                <h1 className="font-extrabold text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[3rem] text-[#fe6d2f]">
+                <h1 className="font-extrabold text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[3rem] text-[#54c6d0]">
                   SUNTEM?
                 </h1>
                 <p className="text-sm text-black">
@@ -76,8 +76,8 @@ const About = () => {
                 <h3 className="text-sm sm:text-base tracking-[1rem] text-black">
                   Misiunea
                 </h3> 
-                <h1 className="font-extrabold text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[3rem] text-[#fe6d2f]">
-                  Noastra
+                <h1 className="font-extrabold text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[3rem] text-[#54c6d0]">
+                 NOASTRĂ
                 </h1>
                 <p className="text-sm text-black">
                   Misiunea noastră este să inspirăm fiecare persoană să își atingă obiectivele fizice și mentale prin antrenamente personalizate și suport constant. Viziunea noastră este de a crea un loc unde oamenii se simt motivați și susținuți, indiferent de nivelul lor de fitness.

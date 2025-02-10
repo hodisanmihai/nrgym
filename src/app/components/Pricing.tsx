@@ -84,8 +84,8 @@ const Pricing = () => {
           <div className="w-[90%] mt-10 flex justify-start flex-col space-y-12">
             {/* Title Section */}
             <div className="text-end space-y-2">
-              <h3 className="text-sm sm:text-base tracking-[1rem] text-gray-200 uppercase">
-                Preturi
+              <h3 className="text-sm sm:text-base tracking-[1rem] text-[#1f1f1f] uppercase">
+              Prețuri
               </h3>
               <h1 className="font-extrabold text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[3rem] text-white">
                 ABONAMENTE
@@ -115,7 +115,8 @@ const Pricing = () => {
                     </h3>
 
                     {/* Card Price */}
-                    <div className="w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white py-3 rounded-lg text-lg font-semibold text-center shadow-md">
+                    <div className="w-full bg-gradient-to-r from-[#54c6d0] to-[#1f98a6]
+ text-white py-3 rounded-lg text-lg font-semibold text-center shadow-md">
                       {item.price}
                     </div>
 
