@@ -30,15 +30,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
-        <head>
-  <link rel="icon" href={logo ?? {logo}} type="image/svg+xml" /> 
-  
-  <meta name="description" content={metadata.description || ''} /> 
-  
-  <meta name="robots" content="index, follow" />
-  <meta property="og:title" content="NRGym - Sala de Fitness din Oradea" />
-  <meta property="og:description" content={metadata.description || ''} />
-</head>
+        
       </body>
     </html>
   );
