@@ -1,8 +1,7 @@
 'use client';
 
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useRef, useEffect } from 'react';
 import Image from 'next/image';
-
 import background from "../assets/items/bg2.png";
 
 const cards = [
@@ -45,9 +44,6 @@ const Pricing = () => {
     const handleMouseUp = () => {
       isDown = false;
       pricingInner.style.cursor = 'grab';
-      if (animationFrameId.current) {
-        cancelAnimationFrame(animationFrameId.current);
-      }
     };
 
     const handleMouseMove = (e: MouseEvent) => {
@@ -73,9 +69,10 @@ const Pricing = () => {
       }
     };
   }, []);
+
   return (
     <div className="w-full flex justify-center bg-white" id='pricing'>
-      <div className="w-[90%] h-fit mt-4 relative md:block mb-6" >
+      <div className="w-[90%] h-fit mt-4 relative md:block mb-6">
         <Image
           src={background}
           alt="background"
@@ -130,7 +127,6 @@ const Pricing = () => {
                 );
               })}
             </div>
-
           </div>
         </div>
       </div>
