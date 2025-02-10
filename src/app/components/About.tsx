@@ -4,8 +4,7 @@ import photo4 from "../assets/photos/97699e5295d104e8543a66b3bed50c4b.jpg";
 import photo5 from "../assets/photos/118938174_3087381578037978_2355624407395000944_n.jpg";
 import photo1 from "../assets/photos/316550445_854880385760123_3885253123846279922_n.jpg"
 import photo3 from "../assets/photos/472553996_9069133986529344_1421504526921241970_n.jpg";
-import photo2 from "../assets/photos/474996298_1461789941735828_7054557777782025423_n.jpg"
-import photo6 from "../assets/photos/475026637_1470199954228160_6511625121272725235_n.jpg"
+import photo2 from "../assets/photos/474996298_1461789941735828_7054557777782025423_n.jpg";
 
 const About = () => {
   return (

@@ -19,26 +19,22 @@ const cards = [
 ];
 
 const Pricing = () => {
-  const [isDragging, setIsDragging] = useState(false);
   const containerRef = useRef<HTMLDivElement>(null);
-
-  // Explicit type declarations for startX and scrollLeft
-  let startX: number = 0;
-  let scrollLeft: number = 0;
-  let animationFrameId: number | null = null;
+  const startX = useRef(0);
+  const scrollLeft = useRef(0);
+  const animationFrameId = useRef<number | null>(null);
 
   useEffect(() => {
     const pricingInner = containerRef.current;
-
-    if (!pricingInner) return; // Handle the case where pricingInner might be null
+    if (!pricingInner) return;
 
     let isDown = false;
 
     const handleMouseDown = (e: MouseEvent) => {
       isDown = true;
       pricingInner.style.cursor = 'grabbing';
-      startX = e.pageX - pricingInner.offsetLeft;
-      scrollLeft = pricingInner.scrollLeft;
+      startX.current = e.pageX - pricingInner.offsetLeft;
+      scrollLeft.current = pricingInner.scrollLeft;
     };
 
     const handleMouseLeave = () => {
@@ -49,8 +45,8 @@ const Pricing = () => {
     const handleMouseUp = () => {
       isDown = false;
       pricingInner.style.cursor = 'grab';
-      if (animationFrameId) {
-        cancelAnimationFrame(animationFrameId); // Cancel any pending frame
+      if (animationFrameId.current) {
+        cancelAnimationFrame(animationFrameId.current);
       }
     };
 
@@ -58,15 +54,8 @@ const Pricing = () => {
       if (!isDown) return;
       e.preventDefault();
       const x = e.pageX - pricingInner.offsetLeft;
-      const walk = (x - startX) * 3; // Increased the scroll speed multiplier (smooth movement)
-      pricingInner.scrollLeft = scrollLeft - walk;
-    };
-
-    const animateScroll = () => {
-      if (isDown) {
-        // Use requestAnimationFrame to keep the scrolling smooth
-        animationFrameId = requestAnimationFrame(animateScroll);
-      }
+      const walk = (x - startX.current) * 3;
+      pricingInner.scrollLeft = scrollLeft.current - walk;
     };
 
     pricingInner.addEventListener('mousedown', handleMouseDown);
@@ -74,18 +63,16 @@ const Pricing = () => {
     pricingInner.addEventListener('mouseup', handleMouseUp);
     pricingInner.addEventListener('mousemove', handleMouseMove);
 
-    // Cleanup the event listeners and cancel the animation frame on unmount
     return () => {
       pricingInner.removeEventListener('mousedown', handleMouseDown);
       pricingInner.removeEventListener('mouseleave', handleMouseLeave);
       pricingInner.removeEventListener('mouseup', handleMouseUp);
       pricingInner.removeEventListener('mousemove', handleMouseMove);
-      if (animationFrameId) {
-        cancelAnimationFrame(animationFrameId);
+      if (animationFrameId.current) {
+        cancelAnimationFrame(animationFrameId.current);
       }
     };
   }, []);
-
   return (
     <div className="w-full flex justify-center bg-white" id='pricing'>
       <div className="w-[90%] h-fit mt-4 relative md:block mb-6" >
